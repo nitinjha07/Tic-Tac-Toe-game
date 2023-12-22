@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-color: black; */
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.player-info-content {
+    /* display: inline-block; */
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    position: absolute;
+    left: 33rem;
+    font-size: 15px;
+    width: 12rem;
+}
+
+.button-container{
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    right: 33rem;
+    width: 12rem;
+}
+
+#button{
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    background: none;
+}
+
+.tic-tac-toe {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 7rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 30px;
+    height: 450px;
+    width: 450px;
+}
+
+.cell {
+    width: 128px;
+    height: 128px;
+    font-size: 7rem;
+    text-align: center;
+    line-height: 130px;
+    cursor: pointer;
+}
+
+.cell-1, .cell-2, .cell-4, .cell-5 {
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.cell-3, .cell-6 {
+    border-bottom: 3px solid white;
+}
+
+.cell-7, .cell-8 {
+    border-right: 3px solid white;
+}
+
+.outer-wrapper{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('./images/outerspace-6.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+.doraemon{
+    position: absolute;
+    height: 430px;
+    top: 11rem;
+    left: 4rem;
+
+}
+
+.shinchan{
+    position: absolute;
+    top: 12rem;
+    height: 400px;
+    left: 65rem;
+}
+
+.doraemon-text{
+    position: absolute;
+    font-size: 4rem;
+    top: 6rem;
+    left: 9rem;
+}
+
+.shinchan-text{
+    position: absolute;
+    font-size: 4rem;
+    top: 6rem;
+    left: 71rem;
+}
+
+.leaderboard-container{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid white;
+    width: 450px;
+    height: 130px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.column{
+    margin-top: 15px;
+    /* border: 2px solid yellow; */
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 15px;
+}
+
+.win-container-left{
+    width: 30%;
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+    height: 600px;
+}
+
+.win-container-left h1{
+    font-size: 3.5rem;
+}
+
+#winner-meme{
+    position: relative;
+    right: 7rem;
+    top: 8rem;
+    height: 250px;
+}
+
+#win-effect{
+    position: relative;
+    width: 50%;
+    left: 90px;
+    bottom: 70px;
+}
+
+.next-container{
+    display: inline-block;
+    position: absolute;
+    top: 20rem;
+    left: 70rem;
+}
+
+.next-circle{
+    background-color: white;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.next-button{
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+.win-container-outer{
+    display: none;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe | Nitin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600&family=Kanit:wght@500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Roboto+Condensed&family=Teko&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="outer-wrapper">
+        <div class="wrapper">
+            <div class = "player-info" >
+                <div class="player-info-content">
+                    <p id="indicator_text"></p>
+                </div>
+            </div>
+
+            <div class="tic-tac-toe">
+                    <!-- <p>second div</p> -->
+                    <div class="cell cell-1"></div>
+                    <div class="cell cell-2"></div>
+                    <div class="cell cell-3"></div>
+                    <div class="cell cell-4"></div>
+                    <div class="cell cell-5"></div>
+                    <div class="cell cell-6"></div>
+                    <div class="cell cell-7"></div>
+                    <div class="cell cell-8"></div>
+                    <div class="cell cell-9"></div>
+            </div>
+
+            <div class="button-container">
+                <button id="button">New Game</button>
+            </div>
+
+            <div class="leaderboard-container">
+                <div class="column">
+                    <p>Player-X</p>
+                    <p class="x-score score">0</p>
+                </div>
+                <div class="column">
+                    <p>Player-O</p>
+                    <p class="o-score score">0</p>
+                </div>
+                <div class="column">
+                    <p>Tie</p>
+                    <p class="tie score">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="avatar-container">
+            <h3 class="doraemon-text avatar">Player - X</h3>
+            <h3 class="shinchan-text avatar">Player - O</h3>
+            <img src="./images/Doraemon-2.gif" alt="Doaremon" class="avatar doraemon">
+            <img src="./images/shinchan.gif" alt="Shinchan" class="avater shinchan">
+        </div>
+
+        <div class="win-container-outer">
+            <div class="win-container-left">
+                <h1>X wins this round</h1>
+                <img src="./images/win-animation.gif" alt="Winnng celebration" id="win-effect">
+                <img src="./images/puneet-superstar-jhuk-ke-rehna.gif" alt="Winner meme" id="winner-meme">
+            </div> 
+
+            <div class="next-container">
+                <div class="next-circle" id="next-circle"><img src="./images/button.png" alt="Next button" class="next-button"></div>
+            </div>
+            <!-- <img src="./images/button.png" alt="Next button" class="next-button"> -->
+        </div>
+
+        <!-- debuggers -->
+        <button id="debug" style="background-color: yellow; color: red;">debugger</button>
+        <button id="game-win" style="background-color: yellow; color: red;">wins</button>
+        <button id="game-tied" style="background-color: yellow; color: red;">Game tied</button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
